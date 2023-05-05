@@ -27,7 +27,8 @@
 
 .description p {
   position: relative;
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   padding: 1rem;
   background-color: rgba(var(--callout-rgb), 0.5);
   border: 1px solid rgba(var(--callout-border-rgb), 0.3);
@@ -41,9 +42,10 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
-  width: var(--max-width);
+  grid-template-columns: repeat(1, minmax(100%, auto));
+  width: 100%;
   max-width: 100%;
+  text-align: center;
 }
 
 .card {
@@ -70,6 +72,8 @@
   font-size: 0.9rem;
   line-height: 1.5;
   max-width: 30ch;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .center {
@@ -205,17 +209,14 @@
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(1, 100%);
   }
 }
 
 @media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
-  }
 
   .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+    filter: invert(0) drop-shadow(0 0 0.3rem #ffffff70);
   }
 }
 
