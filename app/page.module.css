@@ -24,7 +24,7 @@
   flex-wrap: nowrap;
   width: 100%;
   height: 100%;
-  gap: 85px;
+  gap: 65px;
 }
 
 .main {
@@ -106,18 +106,7 @@
 }
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
-  .goButton:hover{
-    animation: nextarrow 0.3s;
-  }
- 
- @keyframes nextarrow {
-   0% {
-     width: 70px;
-   }
-   100% {
-    width: 120px;
-   }
- }
+
 }
 
 @media (prefers-reduced-motion) {
@@ -132,7 +121,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 1500px;
+    height: 1300px;
   }
 
   .contentGrid {
@@ -140,6 +129,10 @@
     flex-direction: column;
     max-width: 100%;
     min-width: 350px;
+  }
+
+  .card h2 {
+    font-size: 15px;
   }
 
   .imageBlock {
