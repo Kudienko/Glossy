@@ -25,7 +25,7 @@ export default function Mobile() {
             objectFit='contain'
           />
           <Image
-            className={styles.logo}
+            className={styles.logoMobile}
             src="/l_b_1.png"
             alt="Glossy Logo"
             layout='fill'
