@@ -1,78 +1,29 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+"use client";
 import localFont from 'next/font/local';
-
-const myFont = localFont({ src: '../public/HalvarBreit-Lt.woff2' });
+import { useEffect, useState } from "react";
+import { UAParser } from "ua-parser-js";
+import Desktop from './MainPage/Versions/desktop';
+import Mobile from './MainPage/Versions/mobile';
+// const myFont = localFont({ src: '../public/HalvarBreit-Lt.woff2' });
 
 export default function Home() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const parser = new UAParser();
+    const userAgent = window.navigator.userAgent;
+    const result = parser.setUA(userAgent).getResult();
+    const isMobileDevice = /mobile/i.test(result.device.type);
+    setIsMobile(isMobileDevice);
+  }, []);
+
   return (
-    <main className={styles.main}>
-      <div className={styles.contentGrid}>
-
-        <div className={styles.imageBlock}>
-          <Image
-            className={styles.logo}
-            src="/l_b_1.svg"
-            alt="Glossy Logo"
-            layout='fill'
-            objectFit='contain'
-            priority
-          />
-        </div>
-        <div className={styles.rightContentBlock}>
-          <Image
-            className={styles.logo}
-            src="/r_b_1.svg"
-            alt="Glossy Logo"
-            layout='fill'
-            objectFit='contain'
-            priority
-          />
-
-          <Image
-            className={styles.logo}
-            src="/r_b_2.svg"
-            alt="Glossy Logo"
-            layout='fill'
-            objectFit='contain'
-          />
-          <div className={myFont.className}>
-            <p>Поможем изучать иностранные языки при помощи уникальных упражнений, сгенерированных из медиа контента.</p>
-          </div>
-
-          <Image
-            className={styles.logo}
-            src="/r_b_3.svg"
-            alt="Glossy Logo"
-            layout='fill'
-            objectFit='contain'
-            priority
-          />
-
-        </div>
+    <>
+      <div>
+        <main>
+          {isMobile ? <Mobile /> : <Desktop />}
+        </main>
       </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://t.me/glossy_edu_bot"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div className={myFont.className}>
-            <h2>SIGN UP FOR BETA TESTING <span>&gt;</span><span>&gt;</span></h2>
-          </div>
-          <div className={styles.goButton}>
-          <Image
-            className={styles.arrowImage}
-            src="/arrow.svg"
-            alt="Glossy Logo"
-            width={24}
-            height={24}
-          />
-          </div>
-        </a>
-      </div>
-    </main>
-  )
+    </>
+  );
 }
