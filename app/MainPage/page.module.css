@@ -67,7 +67,6 @@
   width: 100%;
   background: radial-gradient(86.39% 86.39% at 50.15% 13.61%, rgba(194, 249, 252, 0.7) 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(146.15% 125.83% at 83.58% 43.61%, rgba(255, 199, 0, 0.3) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(72.12% 319.01% at 9.97% 88.11%, rgba(215, 180, 250, 0.7) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(84.85% 156.93% at 45.67% 100%, rgba(255, 157, 205, 0.7) 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
   max-width: 100%;
-  min-width: 527px;
   bottom:0;
   height: 116px;
   border-radius: 64px 64px 0px 0px;
@@ -141,5 +140,12 @@
 @media (prefers-reduced-motion) {
   .card:hover span {
     transform: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) { 
+  .card h2 {
+    font-size: 14px;
   }
 }
