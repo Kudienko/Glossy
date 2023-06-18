@@ -9,7 +9,7 @@ export default function SignUpButton() {
   return (
     <div className={styles.grid}>
     <a
-      href="https://t.me/glossy_edu_bot"
+      href="https://t.me/glossyapp"
       className={styles.card}
       target="_blank"
       rel="noopener noreferrer"
