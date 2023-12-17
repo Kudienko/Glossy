@@ -3,6 +3,7 @@ import SignUpButton from "@/app/MainPage/Versions/Components/SignUpButton/SignUp
 import Lottie from "lottie-react";
 import logoRound from "../../../../../public/logo_round.json"
 import styles from "./Second.module.css"
+import Image from "next/image";
 
 class SecondPage extends Component {
     render() {
@@ -14,7 +15,7 @@ class SecondPage extends Component {
                             <div className={styles.block_left}>
                                 <div className={styles.block_top}>
                                     <div className={styles.border_white}>
-                                        <img src="/1punkt.svg" alt="personal plan" className={styles.icon}/>
+                                        <Image src="/1punkt.svg" width={48} height={48} alt="personal plan" className={styles.icon}/>
                                         <div className={styles.text1}>
                                             Персональный план обучения <br/>
                                             или полная свобода
@@ -28,7 +29,7 @@ class SecondPage extends Component {
                                 </div>
                                 <div className={styles.block_bot}>
                                     <div className={styles.border_white}>
-                                        <img src="/2punkt.svg" alt="personal plan" className={styles.icon}/>
+                                        <Image src="/2punkt.svg" width={48} height={48} alt="personal plan" className={styles.icon}/>
                                         <div className={styles.text1}>
                                             Адаптивные субтитры <br/> для комфортного просмотра
                                         </div>
@@ -42,7 +43,7 @@ class SecondPage extends Component {
                             <div className={styles.block_right}>
                                 <div className={styles.block_top}>
                                     <div className={styles.border_white}>
-                                        <img src="/3punkt.svg" alt="personal plan" className={styles.icon}/>
+                                        <Image src="/3punkt.svg" width={48} height={48} alt="personal plan" className={styles.icon}/>
                                         <div className={styles.text1}>
                                             Целые фильмы и сериалы
                                         </div>
@@ -53,7 +54,7 @@ class SecondPage extends Component {
                                 </div>
                                 <div className={styles.block_bot}>
                                     <div className={styles.border_white}>
-                                        <img src="/4punkt.svg" alt="personal plan" className={styles.icon}/>
+                                        <Image src="/4punkt.svg" width={48} height={48} alt="personal plan" className={styles.icon}/>
                                         <div className={styles.text1}>
                                             Следите за прогрессом
                                         </div>

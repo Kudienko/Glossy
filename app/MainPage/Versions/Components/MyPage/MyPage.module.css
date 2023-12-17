@@ -10,11 +10,9 @@
 
 .page {
     flex: 1 1 auto;
+    height: 88.8vh;
 }
 
-.page__main_block {
-
-}
 
 .main_block_container {
     max-width: 1216px;
@@ -33,12 +31,6 @@
 
 .block_left {
     width: 592px;
-    padding-top: 50px ;
-
-}
-
-.block_left_top {
-
 }
 
 .text1 {
@@ -51,14 +43,14 @@
 }
 
 .logo_text {
-    margin-bottom: 88px;
+    margin-bottom: 11vh;
 }
 
 .block_left_bottom {
     border: 1px solid rgba(168, 171, 183, 1);
     width: 592px;
-    height: 261px;
-    border-radius: 32px 32px 48px 48px;
+    height: 28vh;
+    border-radius: 32px 32px 32px 32px;
 }
 
 .text2 {
@@ -87,7 +79,7 @@
             rgba(255, 157, 205, 0.7) 0%,
             rgba(255, 255, 255, 0) 100%), #FFFFFF;
     width: 592px;
-    height: 128px;
+    height: 12vh;
     border-radius: 48px;
     display: flex;
     align-items: center;
@@ -97,9 +89,9 @@
 .black__button {
     background: rgba(51, 51, 51, 1);
     border-radius: 56px;
-    height: 80px;
+    height: 8vh;
     width: 544px;
-    padding: 8px 10px 8px 32px;
+    padding: 8px 10px 0.1vh 32px;
     display: flex;
 }
 
@@ -112,15 +104,16 @@
     color: rgba(246, 246, 246, 1);
     font-family: HalvarBreit-Lt, sans-serif;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 1vh;
 }
 
 
 
 .circle {
     background:rgba(246, 246, 246, 1);
-    width: 64px;
-    height: 64px;
+    width: 6.3vh;
+    height: 6vh;
+    margin-bottom: 10px;
     border-radius: 56px;
     display: flex;
     justify-content: center;
@@ -144,7 +137,7 @@
 
 .block_right {
     width: 487px;
-    height: 644px;
+    height: 80vh;
     padding: 0 15px;
     display: flex;
     box-sizing: content-box;
@@ -155,10 +148,12 @@
 .iphone {
     position: absolute;
     z-index: 55;
+    height: 90vh;
+    width: 456px;
 }
 
 
-.tip {
+/* .tip {
     position: absolute;
     margin: 92px 0 65px 0;
     animation-name: rotation;
@@ -166,7 +161,7 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     z-index: 1;
-}
+} */
 
 @keyframes rotation {
     0% {
@@ -182,8 +177,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    margin-top: -5vh;
 }
 
 .scroll {

@@ -66,7 +66,11 @@ export default function Desktop() {
         <SwiperSlide><Progress /></SwiperSlide>
         <SwiperSlide><SubmitApp /></SwiperSlide>
       </Swiper> */}
-      <SubmitApp />
+      {/* <SubmitApp /> */}
+      {/* <Progress /> */}
+      {/* <SecondPage /> */}
+      <MyPage />
+
       {/* <ThirdPage /> */}
       {/* <MyFooter /> */}
       {/* <SignUpButton /> */}

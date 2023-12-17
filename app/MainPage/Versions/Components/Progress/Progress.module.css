@@ -11,11 +11,7 @@
 .page {
     position: relative;
     flex: 1 1 auto;
-    height: 1000px;
-}
-
-.page__main_block {
-
+    height: 88.8vh;
 }
 
 .main_block_container {
@@ -29,7 +25,7 @@
 }
 
 .main_block_body {
-    padding: 180px 0 0 0;
+    padding: 5% 0 0 0;
 }
 
 .title {
@@ -41,7 +37,7 @@
 
 .load_block {
     display: flex;
-    margin-top: 156px;
+    margin-top: 15vh;
 }
 
 .load {
@@ -106,7 +102,7 @@
 }
 
 .beta_text {
-    margin-top: 207px;
+    margin-top: 10vh;
     float: right;
     font-size: 16px;
     font-weight: 400;

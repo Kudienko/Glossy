@@ -11,7 +11,7 @@
 .page {
   position: relative;
   flex: 1 1 auto;
-  height: 1000px;
+  height: 88.6vh;
 }
 
 .main_block_container {
@@ -24,8 +24,8 @@
 }
 
 .main_block_body {
-  padding: 150px 0 0 0;
-  height: 647px;
+  padding: 2% 0 0 0;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,7 +40,7 @@
 .block_top {
   z-index: 5;
   width: 488px;
-  height: 233px;
+  height: 23vh;
   border-radius: 32px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   align-items: center;
@@ -55,7 +55,7 @@
   z-index: 10;
   background: rgba(246, 246, 246, 1);
   width: 488px;
-  height: 112px;
+  height: 10vh;
   border: 1px solid white;
   border-radius: 32px;
   display: flex;
@@ -80,7 +80,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 116%;
-  padding: 32px 24px 32px 24px;
+  padding: 2vh 1vh 2vh 3vh;
   color: rgba(198, 199, 203, 1);
 }
 
@@ -89,10 +89,10 @@
 }
 
 .block_bot {
-  margin-top: 181px;
+  margin-top: 10vh;
   z-index: 5;
   width: 488px;
-  height: 233px;
+  height: 23vh;
   border-radius: 32px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   align-items: center;
