@@ -1,0 +1,31 @@
+
+
+.page {
+  position: relative;
+  flex: 1 1 auto;
+  height: 700px;
+}
+
+.main_block_container {
+  max-width: 1216px;
+  padding: 0 15px;
+  margin: 0 auto;
+  min-height: 32px;
+  align-items: center;
+  box-sizing: content-box;
+}
+
+.main_block_body {
+  padding: 50px 0 0 0;
+  display: flex;
+  overflow: hidden;
+}
+
+.slide {
+  text-align: center;
+  align-items: center;
+}
+
+.slider {
+  height: 100%;
+}

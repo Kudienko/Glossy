@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styles from '../../MainPage/page.module.css';
-import SignUpButton from './Components/signUpButton';
+import SignUpButton from './Components/SignUpButton/SignUpButton';
 import localFont from 'next/font/local';
 
 const myFont = localFont({ src: '../../fonts/HalvarBreit-Lt.woff2' });

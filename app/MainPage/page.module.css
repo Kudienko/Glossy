@@ -1,151 +1,33 @@
-.contentGrid {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  width: 100%;
-  max-height: 741vh;
-  max-width: 100ch;
-  min-width: 100ch;
-  gap: 72px;
-  align-content: flex-end;
+.block {
+    width: 487px;
+    height: 644px;
+    padding: 0 15px;
+    margin: 200px auto;
+    display: flex;
+    box-sizing: content-box;
+    position: relative;
 }
 
-.imageBlock {
-  display: flex;
-  flex-wrap: nowrap;
-  width: 100%;
-  height: 100%;
-  align-content: flex-end;
+.iphone {
+    position: absolute;
+    z-index: 55;
 }
 
-.rightContentBlock {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  width: 100%;
-  height: 100%;
-  gap: 55px;
+.tip {
+    position: absolute;
+    margin: 92px 0 65px 0;
+    animation-name: rotation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 1;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
-  height: 100px;
-  background: #2B2B2B;
-  gap: 30px;
-}
-
-.mainMobile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  background: #2B2B2B;
-  justify-content: center;
-  padding-top: 24px;
-  padding-left: 16px;
-  padding-right: 16px;
-  gap: 30px;
-}
-
-.mainMobile p {
-  color: white;
-}
-
-.mobileEmpty {
-  height: 130px;
-}
-
-.grid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background: radial-gradient(86.39% 86.39% at 50.15% 13.61%, rgba(194, 249, 252, 0.7) 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(146.15% 125.83% at 83.58% 43.61%, rgba(255, 199, 0, 0.3) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(72.12% 319.01% at 9.97% 88.11%, rgba(215, 180, 250, 0.7) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(84.85% 156.93% at 45.67% 100%, rgba(255, 157, 205, 0.7) 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
-  max-width: 100%;
-  bottom:0;
-  height: 116px;
-  border-radius: 64px 64px 0px 0px;
-  position: fixed;
-}
-
-.card {
-  display: flex;
-  padding-left: 32px;
-  padding-right: 7px;
-  border-radius: 46px;
-  background: #333333;
-  width: 75%;
-  height: 75%;
-  border: 1px solid rgba(var(--card-border-rgb), 0);
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0px 24px 40px rgba(0, 0, 0, 0.3);
-}
-.card h2 {
-  color: white;
-}
-
-.goButton {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  background-color: white;
-  height: 70px;
-  width: 70px;
-  border-radius: 35px;
-  flex-shrink: 0;
-}
-
-.arrowImage {
-  position:relative;
-}
-
-.grid h2 {
-  text-align: center;
-}
-
-.contentGrid p {
-  font-size: 17px;
-  color: white;
-  margin: auto;
-
-}
-
-.logo {
-  width: 100%;
-  height: 100%;
-  position: relative !important;
-  object-fit: cover;
-}
-
-.logoMobile {
-  width: 100%;
-  height: 100%;
-  transform: translate(5%, 0%);
-  position: relative !important;
-  object-fit: cover;
-}
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-
-}
-
-@media (prefers-reduced-motion) {
-  .card:hover span {
-    transform: none;
-  }
-}
-
-/* Mobile */
-@media (max-width: 700px) { 
-  .card h2 {
-    font-size: 14px;
-  }
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }

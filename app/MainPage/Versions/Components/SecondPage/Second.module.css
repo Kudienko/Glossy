@@ -1,0 +1,117 @@
+@font-face {
+  font-family: Kharkiv-Tone-Regular;
+  src: url("../../../../fonts/Kharkiv-Tone-Regular.ttf");
+}
+
+@font-face {
+  font-family: HalvarBreit-Lt;
+  src: url("../../../../fonts/HalvarBreit-Lt.woff2") format("woff2");
+}
+
+.page {
+  position: relative;
+  flex: 1 1 auto;
+  height: 1000px;
+}
+
+.main_block_container {
+  z-index: 30;
+  max-width: 1216px;
+  margin: 0 auto;
+  min-height: 32px;
+  align-items: center;
+  box-sizing: content-box;
+}
+
+.main_block_body {
+  padding: 150px 0 0 0;
+  height: 647px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.block_left {
+  width: 592px;
+  padding-top: 50px;
+  z-index: 20;
+}
+
+.block_top {
+  z-index: 5;
+  width: 488px;
+  height: 233px;
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  align-items: center;
+  background: radial-gradient(
+    137.99% 1274.91% at -1.37% -3.89%,
+    rgba(216, 229, 243, 0.2) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.border_white {
+  z-index: 10;
+  background: rgba(246, 246, 246, 1);
+  width: 488px;
+  height: 112px;
+  border: 1px solid white;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  padding: 32px 24px 32px 24px;
+}
+
+.text1 {
+  font-family: "Kharkiv-Tone-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 134%;
+  color: rgba(51, 51, 51, 1);
+}
+
+.icon {
+  margin-right: 12px;
+}
+
+.text2 {
+  font-family: "HalvarBreit-Lt", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 116%;
+  padding: 32px 24px 32px 24px;
+  color: rgba(198, 199, 203, 1);
+}
+
+.logo_text {
+  margin-bottom: 88px;
+}
+
+.block_bot {
+  margin-top: 181px;
+  z-index: 5;
+  width: 488px;
+  height: 233px;
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  align-items: center;
+  background: radial-gradient(
+    137.99% 1274.91% at -1.37% -3.89%,
+    rgba(216, 229, 243, 0.2) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.block_right {
+  width: 592px;
+  padding-top: 50px;
+  margin-left: 240px;
+  z-index: 20;
+}
+
+.fon {
+  position: absolute;
+  margin-top: 50px;
+  z-index: 2;
+}

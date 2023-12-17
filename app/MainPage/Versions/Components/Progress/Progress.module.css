@@ -1,0 +1,116 @@
+@font-face {
+    font-family: Kharkiv-Tone-Regular;
+    src: url("../../../../fonts/Kharkiv-Tone-Regular.ttf");
+}
+
+@font-face {
+    font-family: HalvarBreit-Lt;
+    src: url("../../../../fonts/HalvarBreit-Lt.woff2") format("woff2");
+}
+
+.page {
+    position: relative;
+    flex: 1 1 auto;
+    height: 1000px;
+}
+
+.page__main_block {
+
+}
+
+.main_block_container {
+    max-width: 1216px;
+    padding: 0 15px;
+    margin: 0 auto;
+    min-height: 32px;
+    align-items: center;
+    box-sizing: content-box;
+
+}
+
+.main_block_body {
+    padding: 180px 0 0 0;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 32px;
+    color: rgba(246, 246, 246, 1);
+    font-family: 'Kharkiv-Tone-Regular', sans-serif;
+}
+
+.load_block {
+    display: flex;
+    margin-top: 156px;
+}
+
+.load {
+    height: 222px;
+    width: 384px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.load:not(:first-child) {
+    margin-left: 32px;
+}
+
+.circle1 {
+    fill: none;
+    stroke-width: 8px;
+    stroke-dasharray: 1030;
+    stroke-dashoffset: 1000;
+    animation: clock-animation 2s linear forwards;
+    transform-origin: center;
+
+}
+
+.circle2 {
+    fill: none;
+    stroke-width: 8px;
+    stroke-dasharray: 930;
+    stroke-dashoffset: 930;
+    animation: clock-animation 2s linear forwards;
+    transform-origin: center;
+
+}
+
+.circle3 {
+    fill: none;
+    stroke-width: 8px;
+    stroke-dasharray: 430;
+    stroke-dashoffset: 430;
+    animation: clock-animation 2s linear forwards;
+    transform-origin: center;
+
+}
+
+@keyframes clock-animation {
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+.load_text {
+    margin-top: 8px;
+    color: rgba(246, 246, 246, 1);
+    font-family: 'HalvarBreit-Lt', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 116%;
+    text-align: center;
+    width: 384px;
+}
+
+.beta_text {
+    margin-top: 207px;
+    float: right;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'HalvarBreit-Lt', sans-serif;
+    color: rgba(138, 143, 158, 1);
+    line-height: 116%;
+}

@@ -1,0 +1,50 @@
+@font-face {
+    font-family: HalvarBreit-Lt;
+    src: url("../../../../fonts/HalvarBreit-Lt.woff2") format("woff2");
+}
+
+
+.footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 13vh;
+}
+
+
+.footer__top {
+    background: #FFFFFF;
+    text-align: center;
+    height: 5vh;
+    max-width: 100%;
+}
+
+
+.textLine {
+    /*Поменять потом шрифт*/
+    font-family: "HalvarBreit-Lt", sans-serif;
+    font-weight: 400;
+    font-size: 2vw;
+    line-height: 130%;
+    max-width: 100%;
+}
+
+
+/*-----------------------Нижняя часть футера------------------*/
+
+
+
+.footer__container__bottom {
+    font-family: "HalvarBreit-Lt", sans-serif;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+    font-weight: 400;
+    color: #A8ABB7;
+    font-size: 20px;
+    height: 10vh;
+    max-width: 1216px;
+    padding: 0 15px;
+    align-items: center;
+}

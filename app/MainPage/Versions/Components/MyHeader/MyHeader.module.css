@@ -1,0 +1,65 @@
+@font-face {
+    font-family: HalvarBreit-Lt;
+    src: url("../../../../fonts/HalvarBreit-Lt.woff2") format("woff2");
+}
+
+
+.header{
+   padding-top: 32px;
+    width: 100%;
+    left: 0;
+    top: 32px;
+}
+
+.header__container {
+    max-width: 1216px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    min-height: 32px;
+    align-items: center;
+    box-sizing: content-box;
+}
+
+.header__logo {
+
+}
+
+.header__menu {
+    margin: 0 0 0 54px;
+    border: 1px solid #8A8F9E;
+    border-radius: 32px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 8px 24px;
+}
+
+.header__menu__list {
+    display: flex;
+    width: 499px;
+}
+
+.header__menu__item {
+
+}
+
+.header__menu__item:not(:last-child) {
+    margin: 0 24px 0 0;
+}
+
+.header__menu__link {
+    font-family: "HalvarBreit-Lt", sans-serif;
+    font-weight: 500;
+    color: #F6F6F6;
+    line-height: 116%;
+}
+
+.header__menu__link:hover {
+    color: rgba(207, 255, 147, 1);
+}
+
+.soonImage {
+    margin: 0 0 0 207px;
+}
+

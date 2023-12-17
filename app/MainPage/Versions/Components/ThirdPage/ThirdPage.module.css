@@ -1,0 +1,68 @@
+@font-face {
+  font-family: Kharkiv-Tone-Regular;
+  src: url("../../../../fonts/Kharkiv-Tone-Regular.ttf");
+}
+
+@font-face {
+  font-family: HalvarBreit-Lt;
+  src: url("../../../../fonts/HalvarBreit-Lt.woff2") format("woff2");
+}
+
+.page {
+  position: relative;
+  flex: 1 1 auto;
+  height: 900px;
+  overflow: hidden;
+}
+
+.main_block_container {
+  max-width: 1500px;
+  padding: 0 15px;
+  margin: 0 auto;
+  min-height: 32px;
+  align-items: center;
+  box-sizing: content-box;
+}
+
+.main_block_body {
+  padding: 50px 0 0 0;
+  display: flex;
+  margin-left: 130px;
+}
+
+.block_left {
+  width: 592px;
+  padding-top: 150px;
+  display: flex;
+}
+
+.text {
+  font-family: "Kharkiv-Tone-Regular", sans-serif;
+  color: rgba(246, 246, 246, 1);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 125%;
+  padding-left: 32px;
+  width: 544px;
+}
+
+.block_right {
+  width: 487px;
+  height: 644px;
+  padding: 0 15px;
+  display: flex;
+  box-sizing: content-box;
+  margin-left: 136px;
+}
+
+.iphone {
+  position: absolute;
+  z-index: 55;
+}
+
+.zphone {
+  margin-top: 130px;
+  margin-left: -136px;
+  position: absolute;
+  z-index: 55;
+}

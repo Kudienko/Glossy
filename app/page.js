@@ -20,10 +20,9 @@ export default function Home() {
   return (
     <>
       <div>
-        <main>
-          {isMobile ? <Mobile /> : <Desktop />}
-        </main>
+          {/*{isMobile ? <Mobile /> : <Desktop />}*/}
+          <Desktop />
       </div>
     </>
-  );
+  );  
 }
