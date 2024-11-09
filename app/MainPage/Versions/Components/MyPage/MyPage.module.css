@@ -49,8 +49,9 @@
 .block_left_bottom {
     border: 1px solid rgba(168, 171, 183, 1);
     width: 592px;
-    height: 28vh;
-    border-radius: 32px 32px 32px 32px;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
 }
 
 .text2 {
@@ -80,7 +81,7 @@
             rgba(255, 255, 255, 0) 100%), #FFFFFF;
     width: 592px;
     height: 12vh;
-    border-radius: 48px;
+    border-radius: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,6 +94,7 @@
     width: 544px;
     padding: 8px 10px 0.1vh 32px;
     display: flex;
+    align-items: center;
 }
 
 .text__black_button {
@@ -104,7 +106,6 @@
     color: rgba(246, 246, 246, 1);
     font-family: HalvarBreit-Lt, sans-serif;
     text-align: center;
-    padding-top: 1vh;
 }
 
 

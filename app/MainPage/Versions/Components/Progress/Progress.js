@@ -50,7 +50,7 @@ const ThirdPage = () => {
                     </div>
                 </div>
             </div>
-            <SignUpButton/>
+            {/*<SignUpButton/>*/}
         </main>
     );
 };

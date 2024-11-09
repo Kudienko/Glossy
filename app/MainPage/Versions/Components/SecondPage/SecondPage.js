@@ -8,7 +8,7 @@ import Image from "next/image";
 class SecondPage extends Component {
     render() {
         return (
-            <main className={styles.page}>
+            <main className={styles.page} id="block2">
                 <div className={styles.page__main_block}>
                     <div className={styles.main_block_container}>
                         <div className={styles.main_block_body}>
@@ -68,7 +68,7 @@ class SecondPage extends Component {
                         </div>
                     </div>
                 </div>
-                <SignUpButton/>
+                {/*<SignUpButton/>*/}
             </main>
 
         );

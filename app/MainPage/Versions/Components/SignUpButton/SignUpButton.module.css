@@ -6,9 +6,10 @@
 .button__container {
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 0; /* Прикрепляет элемент к низу родительского контейнера */
     width: 100%;
     padding: 0 15px;
+    margin: 0 auto;
 }
 
 .button__gradient {

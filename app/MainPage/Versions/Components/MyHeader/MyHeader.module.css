@@ -3,9 +3,8 @@
     src: url("../../../../fonts/HalvarBreit-Lt.woff2") format("woff2");
 }
 
-
-.header{
-   padding-top: 32px;
+.header {
+    padding-top: 32px;
     width: 100%;
     left: 0;
     top: 32px;

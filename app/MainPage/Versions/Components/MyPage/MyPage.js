@@ -8,7 +8,7 @@ import logoRound from "../../../../../public/logo_round_nocenter.json"
 
 const MyPage = () => {
     return (
-        <main className={styles.page}>
+        <main className={styles.page} id="block1">
             <div className={styles.page__main_block}>
                 <div className={styles.main_block_container}>
                     <div className={styles.main_block_body}>

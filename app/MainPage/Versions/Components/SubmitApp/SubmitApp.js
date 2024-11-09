@@ -98,7 +98,7 @@ const SubmitApp = () => {
   };
 
   return (
-    <main className={styles.page}>
+    <main className={styles.page} id="block4">
       <div className={styles.page__main_block}>
         <div className={styles.main_block_container}>
           <div className={styles.main_block_body}>

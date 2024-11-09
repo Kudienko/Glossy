@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-y: hidden;
+  height: 100%;
+}
+
 a {
   text-decoration: none;
 }
